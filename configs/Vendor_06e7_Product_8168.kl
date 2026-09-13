@@ -1,0 +1,40 @@
+# Keylayout for SEI Robotics / Claro Bluetooth Remote Control (NES)
+# Vendor 06e7 Product 8168
+
+key 116   POWER
+key 164   MEDIA_PLAY_PAUSE
+key 167   MEDIA_RECORD
+key 362   GUIDE
+key 103   DPAD_UP
+key 108   DPAD_DOWN
+key 105   DPAD_LEFT
+key 106   DPAD_RIGHT
+key 115   VOLUME_UP
+key 114   VOLUME_DOWN
+key 113   VOLUME_MUTE
+key 353   DPAD_CENTER
+key 158   BACK
+key 217   ASSIST
+key 366   TV_CONTENTS_MENU
+key 580   ALL_APPS
+key 172   HOME
+key 402   CHANNEL_UP
+key 403   CHANNEL_DOWN
+key 168   MEDIA_REWIND
+key 208   MEDIA_FAST_FORWARD
+key 2     1
+key 3     2
+key 4     3
+key 5     4
+key 6     5
+key 7     6
+key 8     7
+key 9     8
+key 10    9
+key 11    0
+
+# Dedicated shortcut keys (Custom Android TV Remappings)
+key usage 0x0c00cb PROG_RED
+key usage 0x0c00ce PROG_GREEN
+key usage 0x0c00ca PROG_YELLOW
+key usage 0x0c00c0 PROG_BLUE
