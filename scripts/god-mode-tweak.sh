@@ -46,7 +46,7 @@ echo "[4/6] Eliminating USB Gamepad Lag (autosuspend off)..."
 $ADB_CMD shell "su -c 'echo -1 > /sys/module/usbcore/parameters/autosuspend 2>/dev/null || true'"
 
 echo "[5/6] Neutralizing Operator Locks & Setting Permissive Uninstall Flags..."
-$ADB_CMD shell "su -c 'setprop persist.sys.forbit_debug false; setprop persist.sys.open.uninstall.permission.flag true; setprop persist.sys.sei.restart_apk_from_gms_kill false; setprop persist.sys.support_frpc false; setprop persist.sys.def_launcher_pkg com.spocky.projengmenu; setenforce 0'"
+$ADB_CMD shell "su -c 'setprop persist.sys.forbit_debug false; setprop persist.sys.open.uninstall.permission.flag true; setprop persist.sys.sei.restart_apk_from_gms_kill false; setprop persist.sys.support_frpc false; setprop persist.sys.def_launcher_pkg com.spocky.projengmenu; setenforce 0; settings put global development_settings_enabled 1; settings put secure restricted_settings 1; settings put global adb_enabled 1; settings put global nes_development_pin_done 1'"
 
 echo "[6/6] Purging Carrier Bloatware via Universal Regex Scanner..."
 CARRIER_REGEX="claro|nagra|telecom|cablevision|flow|telecentro|vodafone|totalplay|tigo|megacable|xview|zte|skyway|tvbugtracker"

@@ -135,3 +135,10 @@ setprop persist.sys.def_launcher_pkg com.spocky.projengmenu
 # 13. SELinux: Permissive
 setenforce 0
 
+# 14. Universal Developer Options & ADB Activation (SEI Bypass)
+# Permanently keeps developer options, ADB, and restricted settings unlocked
+settings put global development_settings_enabled 1
+settings put secure restricted_settings 1
+settings put global adb_enabled 1
+settings put global nes_development_pin_done 1
+

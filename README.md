@@ -78,7 +78,12 @@ Este es el paso más importante para que la TV Box lea la USB antes de arrancar 
 ### 🚀 PASO 4: Limpieza Automática (Eliminar Operador y Activar Modo Dios)
 
 Una vez la caja prenda y hagas la configuración inicial de Wi-Fi:
-1. Activa la *Depuración por USB* en *Ajustes de desarrollador* (o conecta por cable USB).
+1. **Activar Opciones de desarrollador y Depuración por USB:**
+   * Ve a *Ajustes > Preferencias del dispositivo > Información > Número de compilación*.
+   * Si la operadora bloquea los 7 toques con el mensaje *"Esta opción no se encuentra habilitada"*, ingresa la **combinación secreta en el control remoto**:
+     > **`⬅️ ⬅️ ➡️ ➡️ OK ⬅️ ➡️ OK`**  
+     *(Izquierda, Izquierda, Derecha, Derecha, OK, Izquierda, Derecha, OK)*
+   * Para eliminar esta restricción de forma definitiva mediante Magisk sin tocar el control, consulta [docs/developer-options-bypass.md](docs/developer-options-bypass.md).
 2. Ejecuta en tu terminal el optimizador automático:
    ```bash
    ./scripts/god-mode-tweak.sh
